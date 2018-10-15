@@ -14,14 +14,21 @@ class SpidyAnimationViewController: UIViewController {
     @IBOutlet weak var questionMarkViewOne: UIView!
     @IBOutlet weak var questionMarkViewTwo: UIView!
     @IBOutlet weak var questionMarkViewThre: UIView!
+    @IBOutlet weak var headLine: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         startAnimation()
+        setuplabel()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         nukeAllAnimations()
+    }
+
+    fileprivate func setuplabel() {
+        headLine.layer.cornerRadius = 16
+        headLine.text = "Wops nothing to read"
     }
 
     fileprivate func repeatAnimation() {
@@ -38,10 +45,11 @@ class SpidyAnimationViewController: UIViewController {
     }
 
     fileprivate func startAnimation() {
-        UIView.animate(withDuration: 1.0,
+        UIView.animate(withDuration: 1.5,
             delay: 0.5,
             options: [.autoreverse, .repeat],
             animations: {
+                self.setuplabel()
                 self.repeatAnimation()
             },
             completion: { finished in
