@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Spidy Animation View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SpidyAnimationViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1I-kb-S8w">
+                                <rect key="frame" x="67" y="220" width="240" height="302"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spidy_View" translatesAutoresizingMaskIntoConstraints="NO" id="IcQ-rR-xKw">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="294"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IcQ-rR-xKw" secondAttribute="bottom" constant="8" id="JvG-Xu-y3w"/>
+                                    <constraint firstItem="IcQ-rR-xKw" firstAttribute="leading" secondItem="S1I-kb-S8w" secondAttribute="leading" id="Ly3-4o-ghy"/>
+                                    <constraint firstAttribute="trailing" secondItem="IcQ-rR-xKw" secondAttribute="trailing" id="OXc-EF-VhW"/>
+                                    <constraint firstItem="IcQ-rR-xKw" firstAttribute="top" secondItem="S1I-kb-S8w" secondAttribute="top" id="reJ-KH-M0z"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_mark_view" translatesAutoresizingMaskIntoConstraints="NO" id="hx5-TO-ZF0">
+                                <rect key="frame" x="287" y="147" width="53" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="Sz8-dX-Vnb"/>
+                                    <constraint firstAttribute="height" constant="51" id="uwA-MG-Bnr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_mark_view" translatesAutoresizingMaskIntoConstraints="NO" id="8hn-Lj-UrT">
+                                <rect key="frame" x="91" y="84" width="53" height="51"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="question_mark_view" translatesAutoresizingMaskIntoConstraints="NO" id="emf-m4-WdS">
+                                <rect key="frame" x="67" y="564" width="53" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="1t3-5j-CMD"/>
+                                    <constraint firstAttribute="width" constant="53" id="aUp-1x-ypz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="emf-m4-WdS" secondAttribute="bottom" constant="124" id="1z6-fY-cPQ"/>
+                            <constraint firstItem="S1I-kb-S8w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Dac-3N-hIa"/>
+                            <constraint firstAttribute="bottom" secondItem="8hn-Lj-UrT" secondAttribute="bottom" constant="532" id="IWr-BC-Bqd"/>
+                            <constraint firstAttribute="trailing" secondItem="8hn-Lj-UrT" secondAttribute="trailing" constant="231" id="NDh-eG-yB8"/>
+                            <constraint firstItem="S1I-kb-S8w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="PAy-Pa-djb"/>
+                            <constraint firstItem="hx5-TO-ZF0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="147" id="Wk1-b8-di7"/>
+                            <constraint firstItem="8hn-Lj-UrT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="84" id="dQY-46-Ndv"/>
+                            <constraint firstItem="emf-m4-WdS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="128" id="f0f-Uv-on6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S1I-kb-S8w" secondAttribute="trailing" constant="68" id="gBi-U8-BEy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S1I-kb-S8w" secondAttribute="bottom" constant="145" id="hxh-Ir-15g"/>
+                            <constraint firstItem="8hn-Lj-UrT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="91" id="kcK-Km-KZ2"/>
+                            <constraint firstAttribute="trailing" secondItem="hx5-TO-ZF0" secondAttribute="trailing" constant="35" id="tu2-Qu-UPz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="S1I-kb-S8w" id="fqd-1o-GUF"/>
+                        <outlet property="questionMarkViewOne" destination="8hn-Lj-UrT" id="3Ny-zS-5XS"/>
+                        <outlet property="questionMarkViewThre" destination="emf-m4-WdS" id="obD-Qi-hMB"/>
+                        <outlet property="questionMarkViewTwo" destination="hx5-TO-ZF0" id="lnY-gY-TkA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496.80000000000001" y="125.4872563718141"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MJ3-ok-0Fm">
+            <objects>
+                <viewController id="n1f-bD-Xdt" customClass="ViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWD-03-uqY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="r7y-vb-3D4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Onb-dr-OF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="question_mark_view" width="150" height="130"/>
+        <image name="spidy_View" width="542" height="792"/>
+    </resources>
+</document>
