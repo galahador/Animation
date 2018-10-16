@@ -32,13 +32,6 @@
                                     <constraint firstItem="IcQ-rR-xKw" firstAttribute="top" secondItem="S1I-kb-S8w" secondAttribute="top" id="reJ-KH-M0z"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_mark_view" translatesAutoresizingMaskIntoConstraints="NO" id="emf-m4-WdS">
-                                <rect key="frame" x="67" y="564" width="53" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="1t3-5j-CMD"/>
-                                    <constraint firstAttribute="width" constant="53" id="aUp-1x-ypz"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_mark_view" translatesAutoresizingMaskIntoConstraints="NO" id="hx5-TO-ZF0">
                                 <rect key="frame" x="287" y="147" width="53" height="51"/>
                                 <constraints>
@@ -62,10 +55,17 @@
                                     <constraint firstAttribute="height" constant="51" id="vFl-fa-Xub"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="question_mark_view" translatesAutoresizingMaskIntoConstraints="NO" id="emf-m4-WdS">
+                                <rect key="frame" x="94" y="538" width="53" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="1t3-5j-CMD"/>
+                                    <constraint firstAttribute="width" constant="53" id="aUp-1x-ypz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="emf-m4-WdS" secondAttribute="bottom" constant="52" id="1z6-fY-cPQ"/>
+                            <constraint firstAttribute="bottom" secondItem="emf-m4-WdS" secondAttribute="bottom" constant="78" id="1z6-fY-cPQ"/>
                             <constraint firstItem="S1I-kb-S8w" firstAttribute="top" secondItem="8hn-Lj-UrT" secondAttribute="bottom" constant="22" id="6oj-mw-fIB"/>
                             <constraint firstItem="8hn-Lj-UrT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="7bW-Vk-lyL"/>
                             <constraint firstItem="S1I-kb-S8w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Dac-3N-hIa"/>
@@ -73,7 +73,7 @@
                             <constraint firstItem="S1I-kb-S8w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="PAy-Pa-djb"/>
                             <constraint firstItem="hx5-TO-ZF0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="147" id="Wk1-b8-di7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xVa-oT-hoM" secondAttribute="trailing" constant="56" id="eQA-mg-te4"/>
-                            <constraint firstItem="emf-m4-WdS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="f0f-Uv-on6"/>
+                            <constraint firstItem="emf-m4-WdS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="94" id="f0f-Uv-on6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S1I-kb-S8w" secondAttribute="trailing" constant="68" id="gBi-U8-BEy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S1I-kb-S8w" secondAttribute="bottom" constant="145" id="hxh-Ir-15g"/>
                             <constraint firstItem="xVa-oT-hoM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="oR8-Qh-2wH"/>
@@ -96,7 +96,7 @@
         <!--View Controller-->
         <scene sceneID="MJ3-ok-0Fm">
             <objects>
-                <viewController id="n1f-bD-Xdt" customClass="ViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="n1f-bD-Xdt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gWD-03-uqY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
