@@ -32,7 +32,6 @@ class SpidyAnimationViewController: UIViewController {
     }
 
     fileprivate func repeatAnimation() {
-//        UIView.setAnimationRepeatCount(50)
         UIView.setAnimationRepeatAutoreverses(true)
 
         self.questionMarkViewOne.alpha = 0.0

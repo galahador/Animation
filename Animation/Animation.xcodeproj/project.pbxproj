@@ -13,7 +13,7 @@
 		A506B953217507E900524222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A506B951217507E900524222 /* LaunchScreen.storyboard */; };
 		A506B95E217507E900524222 /* AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506B95D217507E900524222 /* AnimationUITests.swift */; };
 		A506B96C21750AA400524222 /* SpidyAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506B96B21750AA400524222 /* SpidyAnimationViewController.swift */; };
-		A506B96E2175203C00524222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506B96D2175203C00524222 /* ViewController.swift */; };
+		A506B96E2175203C00524222 /* PopupManuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506B96D2175203C00524222 /* PopupManuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		A506B95D217507E900524222 /* AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationUITests.swift; sourceTree = "<group>"; };
 		A506B95F217507E900524222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A506B96B21750AA400524222 /* SpidyAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpidyAnimationViewController.swift; sourceTree = "<group>"; };
-		A506B96D2175203C00524222 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A506B96D2175203C00524222 /* PopupManuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				A506B96B21750AA400524222 /* SpidyAnimationViewController.swift */,
-				A506B96D2175203C00524222 /* ViewController.swift */,
+				A506B96D2175203C00524222 /* PopupManuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A506B96E2175203C00524222 /* ViewController.swift in Sources */,
+				A506B96E2175203C00524222 /* PopupManuViewController.swift in Sources */,
 				A506B949217507E700524222 /* AppDelegate.swift in Sources */,
 				A506B96C21750AA400524222 /* SpidyAnimationViewController.swift in Sources */,
 			);
