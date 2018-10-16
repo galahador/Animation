@@ -73,7 +73,7 @@ class PopupManuViewController: UIViewController {
         view.addSubview(map)
         map.leadingAnchor.constraint(equalTo: slideView.leadingAnchor, constant: 30).isActive = true
         map.trailingAnchor.constraint(equalTo: slideView.trailingAnchor, constant: -30).isActive = true
-        map.bottomAnchor.constraint(equalTo: slideView.bottomAnchor, constant: -60).isActive = true
+        map.bottomAnchor.constraint(equalTo: slideView.bottomAnchor, constant: -30).isActive = true
         map.topAnchor.constraint(equalTo: slideView.topAnchor, constant: 70).isActive = true
     }
 
