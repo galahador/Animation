@@ -45,12 +45,20 @@ class PopupManuViewController: UIViewController {
         let mapView = MKMapView()
         return mapView
     }()
+    
+    private lazy var headLineLabel: UILabel = {
+        let headLine = UILabel()
+        headLine.text = "Map"
+        headLine.textAlignment = .center
+        return headLine
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
         slideViewCornerRadius()
         setupMapView()
+        setupHeadLineLabel()
         slideView.addGestureRecognizer(tapGesture)
     }
 
@@ -75,6 +83,15 @@ class PopupManuViewController: UIViewController {
         map.trailingAnchor.constraint(equalTo: slideView.trailingAnchor, constant: -30).isActive = true
         map.bottomAnchor.constraint(equalTo: slideView.bottomAnchor, constant: -30).isActive = true
         map.topAnchor.constraint(equalTo: slideView.topAnchor, constant: 70).isActive = true
+    }
+    
+    fileprivate func setupHeadLineLabel() {
+        headLineLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(headLineLabel)
+        headLineLabel.leadingAnchor.constraint(equalTo: slideView.leadingAnchor, constant: 40).isActive = true
+        headLineLabel.trailingAnchor.constraint(equalTo: slideView.trailingAnchor, constant: -40).isActive = true
+        headLineLabel.topAnchor.constraint(equalTo: slideView.topAnchor, constant: 10).isActive = true
+        headLineLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
 
     @objc fileprivate func popupViewTapped(gesture: UITapGestureRecognizer) {
