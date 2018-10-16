@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 private enum ActionState {
     case closed
@@ -40,9 +41,16 @@ class PopupManuViewController: UIViewController {
         return recogniser
     }()
 
+    private lazy var map: MKMapView = {
+        let mapView = MKMapView()
+        return mapView
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
+        slideViewCornerRadius()
+        setupMapView()
         slideView.addGestureRecognizer(tapGesture)
     }
 
@@ -54,6 +62,19 @@ class PopupManuViewController: UIViewController {
         bottomConstraint = slideView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 440)
         bottomConstraint.isActive = true
         slideView.heightAnchor.constraint(equalToConstant: 500).isActive = true
+    }
+
+    fileprivate func slideViewCornerRadius() {
+        slideView.layer.cornerRadius = 16
+    }
+
+    fileprivate func setupMapView() {
+        map.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(map)
+        map.leadingAnchor.constraint(equalTo: slideView.leadingAnchor, constant: 30).isActive = true
+        map.trailingAnchor.constraint(equalTo: slideView.trailingAnchor, constant: -30).isActive = true
+        map.bottomAnchor.constraint(equalTo: slideView.bottomAnchor, constant: -60).isActive = true
+        map.topAnchor.constraint(equalTo: slideView.topAnchor, constant: 70).isActive = true
     }
 
     @objc fileprivate func popupViewTapped(gesture: UITapGestureRecognizer) {
