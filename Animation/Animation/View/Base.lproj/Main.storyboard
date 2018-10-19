@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n1f-bD-Xdt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RGs-FD-pTW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -108,8 +108,40 @@
             </objects>
             <point key="canvasLocation" x="1342" y="125"/>
         </scene>
+        <!--Profile Image Animation View Controller-->
+        <scene sceneID="qSN-26-e23">
+            <objects>
+                <viewController id="RGs-FD-pTW" customClass="ProfileImageAnimationViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AZv-A9-Vtc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="Orb-LL-Jph">
+                                <rect key="frame" x="107" y="268" width="160" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="0p7-SM-xBV"/>
+                                    <constraint firstAttribute="width" constant="160" id="qq2-AZ-pD4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DzS-Fu-7bE" firstAttribute="bottom" secondItem="Orb-LL-Jph" secondAttribute="bottom" constant="269" id="hhg-Hs-ERf"/>
+                            <constraint firstItem="Orb-LL-Jph" firstAttribute="leading" secondItem="DzS-Fu-7bE" secondAttribute="leading" constant="107" id="yvn-sF-sHx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DzS-Fu-7bE"/>
+                    </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="Orb-LL-Jph" id="hiZ-Bh-hWm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0g-Wc-6Uf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2095" y="122"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="profile_image" width="564" height="703"/>
         <image name="question_mark_view" width="150" height="130"/>
         <image name="spidy_View" width="542" height="792"/>
     </resources>

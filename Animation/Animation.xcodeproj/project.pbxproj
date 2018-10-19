@@ -14,6 +14,7 @@
 		A506B95E217507E900524222 /* AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506B95D217507E900524222 /* AnimationUITests.swift */; };
 		A506B96C21750AA400524222 /* SpidyAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506B96B21750AA400524222 /* SpidyAnimationViewController.swift */; };
 		A506B96E2175203C00524222 /* PopupManuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506B96D2175203C00524222 /* PopupManuViewController.swift */; };
+		A54C05502179D49600333E99 /* ProfileImageAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C054F2179D49600333E99 /* ProfileImageAnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A506B95F217507E900524222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A506B96B21750AA400524222 /* SpidyAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpidyAnimationViewController.swift; sourceTree = "<group>"; };
 		A506B96D2175203C00524222 /* PopupManuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManuViewController.swift; sourceTree = "<group>"; };
+		A54C054F2179D49600333E99 /* ProfileImageAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageAnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				A506B96B21750AA400524222 /* SpidyAnimationViewController.swift */,
 				A506B96D2175203C00524222 /* PopupManuViewController.swift */,
+				A54C054F2179D49600333E99 /* ProfileImageAnimationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				A506B96E2175203C00524222 /* PopupManuViewController.swift in Sources */,
 				A506B949217507E700524222 /* AppDelegate.swift in Sources */,
 				A506B96C21750AA400524222 /* SpidyAnimationViewController.swift in Sources */,
+				A54C05502179D49600333E99 /* ProfileImageAnimationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
